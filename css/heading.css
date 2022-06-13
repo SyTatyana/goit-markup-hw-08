@@ -1,0 +1,12 @@
+.about-heading,
+.team-title,
+.client-section-heading {
+  color: var(--text-secondary-color);
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+/*# sourceMappingURL=heading.css.map */

@@ -1,0 +1,38 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--background-tertiary-color);
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: $secondaryFont;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.footer__contacts {
+    font-style: normal;
+}
+
+.footer__logo{
+    color: #ffffff;
+}
+
+.footer__logo>span {
+    color: var(--accent-color);
+}
+
+.footer-flex {
+    display: flex;
+}
+
+.footer__contacts {
+    margin-right: 70px;
+}
+

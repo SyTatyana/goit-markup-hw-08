@@ -1,0 +1,27 @@
+.about {
+    padding-bottom: 94px;
+}
+
+
+.about__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__activity {
+    position: relative;
+}
+
+.about__text {
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: var(--background-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}

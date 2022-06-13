@@ -1,0 +1,51 @@
+.footer-form {
+    padding-top: 12px;
+}
+
+.footer-form__title {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-form__sign {
+    display: flex;
+    align-items: center;
+}
+
+.footer-form__input {
+    height: 50px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    margin-right: 12px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.footer-form__button {
+    display: flex;
+    align-items: center;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+
+    color: #ffffff;
+    background-color: var(--accent-color);
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+
+.footer-form__icon {
+    margin-left: 10px;
+}
