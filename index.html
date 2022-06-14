@@ -21,85 +21,90 @@
     <!--Header-->
     <header class="header">
       <div class="container header__section">
-        <a class="logo-link header__logo-link" href="index.html" lang="en">
-          <span class="logo-web header__logo-web">Web</span>Studio</a
-        >
-        <div class="mobile-menu">
-        <nav class="navigation">
-          
-            <button
-              type="button"
-              class="burger-btn"
-              aria-expanded="false"
-              aria-controls="mobile-menu-container"
-              data-burger-btn
-            >
-              <svg
-                class="burger-btn__icon"
-                width="40px"
-                height="40px"
-                aria-label="Переключатель мобильного меню"
+        <nav class="header__nav">
+          <a class="logo-link header__logo-link" href="index.html" lang="en">
+            <span class="logo-web header__logo-web">Web</span>Studio</a
+          >
+          <ul class="nav list">
+            <li class="nav__item">
+              <a class="nav__link link nav__link--current" href="./index.html"
+                >Студия</a
               >
-                <use
-                  class="burger-btn__icon-menu"
-                  href="./images/sprite.svg#icon-menu"
-                ></use>
-                <use
-                  class="burger-btn__icon-close"
-                  href="./images/sprite.svg#icon-close"
-                ></use>
-              </svg>
-            </button>
-          </div>
-
-          <div class="menu" id="mobile-menu-container" data-menu-container>
-            <ul class="nav__list">
-              <li class="nav__item current-page">
-                <a class="nav__link--active" href="./index.html">Студия</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="">Контакты</a>
-              </li>
-            </ul>
-            <div class="contacts__positioned">
-              <ul class="contact">
-                <li class="contact__list">
-                  <a class="contact__link" href="mailto:info@devstudio.com">
-                    <svg class="contact__icon" width="16" height="12">
-                      <use href="./images/sprite.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                  </a>
-                </li>
-                <li class="contact__list">
-                  <a class="contact__link" href="tel:0961111111">
-                    <svg class="contact__icon" width="16" height="12">
-                      <use href="./images/sprite.svg#icon-phone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                  </a>
-                </li>
-              </ul>
-              <ul class="mobile-socials">
-                <li>
-                  <a class="mobile-socials__link" href="#">Instagram</a>
-                </li>
-                <li>
-                  <a class="mobile-socials__link" href="#">Twitter</a>
-                </li>
-                <li>
-                  <a class="mobile-socials__link" href="#">Facebook</a>
-                </li>
-                <li>
-                  <a class="mobile-socials__link" href="#">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакты</a>
+            </li>
+          </ul>
         </nav>
+        <ul class="header-contact header-contact__list list">
+          <li class="header-contact__item">
+            <a
+              class="header-contact__link link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header-contact__icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="tel:0961111111">
+              <svg class="header-contact__icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <button class="menu-open" data-menu-open>
+          <svg class="menu-burger" width="24" height="16">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu flex is-hidden" data-menu>
+        <div>
+          <button class="menu-close" data-menu-close>
+            <svg class="menu-close" width="40" height="40">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item">
+              <a
+                class="mob-menu-list__link link mob-menu-list__link--current"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-menu-list__down">
+          <a class="mob-menu-list__tell link" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+          <a class="mob-menu-list__mail link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <ul class="mob-menu-list__social list">
+            <li class="mob-menu-list__social-item">Instagram</li>
+            <li class="mob-menu-list__social-item">Twitter</li>
+            <li class="mob-menu-list__social-item">Facebook</li>
+            <li class="mob-menu-list__social-item">LinkedIn</li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -180,7 +185,7 @@
       <section class="advantage">
         <div class="container advantage__section">
           <h2 hidden>Преимущества</h2>
-          <ul class="advantage__list">
+          <ul class="advantage__list list">
             <li class="advantage__block">
               <div class="advantage__icon">
                 <svg class="advantage-image" width="70" height="70">
@@ -236,7 +241,7 @@
       <section class="about">
         <h2 class="about__heading">Чем мы занимаемся</h2>
         <div class="container about__section">
-          <ul class="about__list">
+          <ul class="about__list list">
             <li class="about__activity">
               <img
                 src="./images/img.jpg"
@@ -268,7 +273,7 @@
       <section class="team">
         <div class="container team-section">
           <h2 class="team__heading">Наша команда</h2>
-          <ul class="team__list">
+          <ul class="team__list list">
             <li class="team__item">
               <img
                 src="./images/img4.jpg"
@@ -314,7 +319,7 @@
             <li class="team__item">
               <img
                 src="./images/img5.jpg"
-                alt="smiling woman with a blond hair"
+                alt="smiling woman with blond hair"
                 width="270"
               />
               <div class="team__name">
@@ -488,6 +493,7 @@
         </div>
       </section>
     </main>
+
     <!--Footer-->
     <footer class="footer">
       <div class="container footer-flex">

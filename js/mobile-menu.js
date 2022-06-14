@@ -1,18 +1,14 @@
 (() => {
-  const menuBtnRef = document.querySelector("[data-burger-btn]");
-  const mobileMenuRef = document.querySelector("[data-menu-container]");
+  const refs = {
+    openMenuBtn: document.querySelector("[data-menu-open]"),
+    closeMenuBtn: document.querySelector("[data-menu-close]"),
+    menu: document.querySelector("[data-menu]"),
+  };
 
-  const body = document.getElementsByTagName("body")[0];
+  refs.openMenuBtn.addEventListener("click", toggleMenu);
+  refs.closeMenuBtn.addEventListener("click", toggleMenu);
 
-  menuBtnRef.addEventListener("click", () => {
-    body.classList.toggle("modal-open");
-
-    const expanded =
-      menuBtnRef.getAttribute("aria-expanded") === "true" || "false";
-
-    menuBtnRef.classList.toggle("is-opened");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
-
-    mobileMenuRef.classList.toggle("is-opened");
-  });
+  function toggleMenu() {
+    refs.menu.classList.toggle("is-hidden");
+  }
 })();

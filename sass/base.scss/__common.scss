@@ -1,5 +1,5 @@
 body{
-    font-family: "$mainFont";
+    font-family:$mainFont;
     letter-spacing: 0.03em;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -20,4 +20,9 @@ p,
 ul {
     margin: 0;
     padding: 0;
+}
+images {
+    display: block;
+    width: 100%;
+    height: auto;
 }

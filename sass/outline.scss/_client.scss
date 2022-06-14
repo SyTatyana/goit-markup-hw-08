@@ -9,6 +9,12 @@
     justify-content: center;
     margin-top: 52px;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
+
 }
 
 .client__link {
@@ -27,6 +33,17 @@
 &:hover,
 &:focus {
     border-color: var(--accent-color);
+}
+@media screen and (max-width: 767px) {
+    width: 210px;
+}
+
+@media screen and (min-width: 768px) {
+    width: 226px;
+}
+
+@media screen and (min-width: 1200px) {
+    width: 170px;
 }
 }
 .client__icon {
