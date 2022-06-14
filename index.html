@@ -27,15 +27,15 @@
           >
           <ul class="nav list">
             <li class="nav__item">
-              <a class="nav__link link nav__link--current" href="./index.html"
+              <a class="nav__link nav__link--current" href="./index.html"
                 >Студия</a
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="">Контакты</a>
+              <a class="nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -126,6 +126,7 @@
                 <use href="./images/sprite.svg#icon-close"></use>
               </svg>
             </div>
+            <!--Form-->
             <form class="form">
               <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
               <label class="form__username">
@@ -184,11 +185,11 @@
       <!--Advantage-->
       <section class="advantage">
         <div class="container advantage__section">
-          <h2 hidden>Преимущества</h2>
-          <ul class="advantage__list list">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="advantage__list advantage-flex list">
             <li class="advantage__block">
               <div class="advantage__icon">
-                <svg class="advantage-image" width="70" height="70">
+                <svg class="advantage__image" width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -244,7 +245,9 @@
           <ul class="about__list list">
             <li class="about__activity">
               <img
-                src="./images/img.jpg"
+                srcset="./images/skills/desktop 1x,
+              ./images/skills/desktop 2x.jpg 2x"
+                src="./images/skills/desktop.jpg"
                 alt="Работа за ноутбуком"
                 width="370"
               />
@@ -252,6 +255,8 @@
             </li>
             <li class="about__activity">
               <img
+                srcset="./images/skills/mobile.jpg 1x, 
+              ./images/skills/mobile 2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="Работа за ноутбуком с телефоном в руках"
                 width="370"
@@ -260,6 +265,8 @@
             </li>
             <li class="about__activity">
               <img
+                srcset="./images/skills/designer.jpg 1x, 
+              ./images/skills/designer 2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="Работа на планшете"
                 width="370"
@@ -276,7 +283,13 @@
           <ul class="team__list list">
             <li class="team__item">
               <img
-                src="./images/img4.jpg"
+                srcset="./images/mobile designer.jpg,
+              ./images/mobile designer 2x.jpg,
+              ./images/tablet designer.jpg,
+              ./images/tablet designer 2x.jpg,
+              ./images/desktop designer.jpg,
+              ./images/desktop designer 2x.jpg, "
+                src="./images/desctop designer.jpg"
                 alt="a man with glasses"
                 width="270"
               />
@@ -318,7 +331,13 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/img5.jpg"
+                srcset="./images/mobile developer.jpg,
+              ./images/mobile developer 2x.jpg,
+              ./images/tablet developer.jpg,
+              ./images/tablet developer 2x.jpg,
+              ./images/desktop developer.jpg,
+              ./images/desktop developer 2x.jpg "
+                src="./images/desktop developer.jpg"
                 alt="smiling woman with blond hair"
                 width="270"
               />
@@ -359,7 +378,13 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/img6.jpg"
+                srcset="./images/mobile marketing.jpg,
+              ./images/mobile marketing 2x.jpg,
+              ./images/tablet marketing.jpg,
+              ./images/tablet marketing 2x,
+              ./images/desktop marketing.jpg,
+              ./images/desktop marketing 2x.jpg"
+                src="./images/desktop marketing.jpg"
                 alt="smiling man in a white shirt"
                 width="270"
               />
@@ -400,7 +425,13 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/img7.jpg"
+                srcset="./images/mobile designer.jpg,
+              ./images/mobile designer 2x.jpg,
+              ./images/tablet designer.jpg,
+              ./images/tablet designer 2x.jpg,
+              ./images/desktop designer.jpg,
+              ./images/desktop designer 2x.jpg"
+                src="./images/desktop designer.jpg"
                 alt="a man in a black T-shirt"
                 width="270"
               />
@@ -446,7 +477,7 @@
       <section class="client">
         <div class="container client-section">
           <h2 class="client__heading">Постоянные клиенты</h2>
-          <ul class="client__list">
+          <ul class="client__list customers list">
             <li class="client__item">
               <a class="client__link" href="">
                 <svg class="client__icon" width="106" height="60">

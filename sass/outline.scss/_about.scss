@@ -10,23 +10,10 @@
 
 .about__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 
-    @media screen and (max-width: 479px) {
-            width: 270px;
-        }
-    
-        @media screen and (min-width: 480px) {
-            width: 450px;
-        }
-    
-        @media screen and (min-width: 768px) {
-            width: 354px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-        }
 }
 
 .about__activity {
@@ -37,12 +24,17 @@
     position: absolute;
 
     bottom: 0;
+    left: 0;
     width: 100%;
+    padding: 27px 0px;
     height: 70px;
+
     text-align: center;
-    font-weight: 700;
-    line-height: 70px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
     text-transform: uppercase;
+    
     color: var(--background-color);
     background-color: rgba(47, 48, 58, 0.8);
 }

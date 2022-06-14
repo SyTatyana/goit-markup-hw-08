@@ -1,5 +1,7 @@
 .form {
     padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
 
     @media screen and (min-width: 480px) {
             width: 450px;
@@ -11,12 +13,11 @@
 }
 
 .form__title {
-    font-family:$mainFont;
+    display: block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.2;
-    color: #212121;
-    margin-bottom: 12px;
+    line-height: 1.15;
+    text-align: center;
 }
 
 .form__username,
