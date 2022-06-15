@@ -1,14 +1,18 @@
-body{
-    font-family:$mainFont;
+body {
+    font-family: Roboto;
     letter-spacing: 0.03em;
     background-color: var(--background-color);
+    color: var(--text-secondary-color);
 }
+
 .list {
     list-style: none;
 }
-a {
+
+.link {
     text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -20,7 +24,8 @@ ul {
     margin: 0;
     padding: 0;
 }
-images {
+
+img {
     display: block;
     width: 100%;
     height: auto;

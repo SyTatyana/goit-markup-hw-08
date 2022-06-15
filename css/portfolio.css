@@ -13,28 +13,18 @@
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  -webkit-transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, -webkit-box-shadow;
   transition-property: background-color, color, box-shadow;
-  transition-property: background-color, color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio__btn:hover, .portfolio__btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
 
 .portfolio__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 56px;
 }
 
@@ -60,15 +50,11 @@
 }
 
 .project {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
 }
-
 .project p {
   font-size: 16px;
   line-height: 1.9;
@@ -77,21 +63,13 @@
 .project__card {
   margin-left: 30px;
   margin-bottom: 30px;
-  -ms-flex-preferred-size: calc((100% - 90px) / 3);
-      flex-basis: calc((100% - 90px) / 3);
-  -webkit-transition-property: -webkit-box-shadow;
-  transition-property: -webkit-box-shadow;
+  flex-basis: calc((100% - 90px) / 3);
   transition-property: box-shadow;
-  transition-property: box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .project__card:hover {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project__card:hover .project__overlay {
@@ -113,12 +91,8 @@
 .project__overlay {
   position: absolute;
   bottom: -294px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 24px;
   padding-right: 24px;
   width: 370px;
@@ -127,12 +101,9 @@
   line-height: 1.5;
   color: var(--background-color);
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transition-property: bottom;
   transition-property: bottom;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project__name {
@@ -150,5 +121,4 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-}
-/*# sourceMappingURL=portfolio.css.map */
+}/*# sourceMappingURL=portfolio.css.map */

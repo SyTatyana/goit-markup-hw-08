@@ -1,91 +1,87 @@
 .advantage {
-    background-color: var(--background-color);
-    color: var(--text-color);
     padding-top: 60px;
     padding-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
-            padding-top: 94px;
-            padding-bottom: 94px;
-        }
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     @media screen and (max-width: 479px) {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
 }
-.advantage-flex{
+
+.advantage-flex {
     display: flex;
     flex-wrap: wrap;
 }
 
-.advantage__icon {
+.advantage-list {
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.advantage-list__item {
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+
+.advantage-list__icon {
     display: flex;
+    height: 120px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
-    height: 120px;
     flex-direction: column;
+    margin-bottom: 30px;
+
     background-color: var(--background-quaternary-color);
 
     @media screen and (min-width: 480px) {
-            width: 450px;
-        }
-    
-        @media screen and (min-width: 768px) {
-            width: 354px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-        }
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
-.advantage__block {
-
-    @media screen and (min-width: 480px) {
-            width: 450px;
-        }
-    
-        @media screen and (min-width: 768px) {
-            width: 354px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-        }
-}
-
-.advantage__image {
+.advantage-list__icon-image {
     align-items: center;
 }
 
-.advantage__list {
-    justify-content: center;
-    gap: 30px;
-
-    
-}
-
-.advantage__title {
+.advantage-list__title {
     margin-bottom: 10px;
 
-    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    
+
     @media screen and (min-width: 768px) {
-            text-align: left;
-        }
+        text-align: left;
+    }
 }
-.advantage__content{
+
+.features-list__content {
     font-size: 14px;
     line-height: 1.71;
 
-    color: var(--text-secondary-color);
+    color: var(--text-color);
 }

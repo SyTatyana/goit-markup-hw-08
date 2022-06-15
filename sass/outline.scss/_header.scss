@@ -24,6 +24,16 @@
   align-items: center;
 }
 
+.header__logo {
+  margin-right: 93px;
+}
+
+.header__logo {
+  &--black {
+    color: #000000;
+  }
+}
+
 .nav {
   display: flex;
 
@@ -33,7 +43,6 @@
 }
 
 .nav__item {
-  color: var(--text-secondary-color);
   &:not(:last-child) {
     margin-right: 50px;
   }
@@ -48,7 +57,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  
+  color: var(---text-secondary-color);
 
   position: relative;
 
@@ -151,14 +160,11 @@
   position: fixed;
   background-color: #fff;
   top: 0;
-  left: 0;
+  right: 0;
   padding: 15px 10px 48px 40px;
   z-index: 999;
+}
 
-  @media screen and (max-width: 768px) {
-      display: none;
-}
-}
 .flex {
   display: flex;
   flex-direction: column;
