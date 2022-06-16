@@ -21,7 +21,7 @@
 
 .advantage-list {
     justify-content: center;
-    grid-gap: 30px;
+    gap: 30px;
 }
 
 .advantage-list__item {
@@ -79,7 +79,7 @@
     }
 }
 
-.features-list__content {
+.advantage-list__content {
     font-size: 14px;
     line-height: 1.71;
 

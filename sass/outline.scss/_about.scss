@@ -19,7 +19,7 @@
     grid-gap: 30px;
 }
 
-.about-list__item {
+.about-list__activity {
     position: relative;
 }
 
@@ -37,6 +37,6 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: var(--white-text-color);
+    color: var(--background-color);
     background-color: rgba(47, 48, 58, 0.8);
 }
